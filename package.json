@@ -1,0 +1,28 @@
+{
+  "name": "markedx",
+  "description": "Marke down with components.",
+  "repository": "git://github.com/9dots/markedx.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/map": "^1.5.3",
+    "@f/self-closing-tags": "^1.0.1",
+    "@f/stringify-attrs": "^1.0.4",
+    "babel-core": "^6.17.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "cheerio": "^0.22.0",
+    "escape-html": "^1.0.3",
+    "hyperx": "^2.0.5",
+    "marked": "^0.3.6",
+    "vdux": "^2.4.10"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
