@@ -10,8 +10,6 @@ const hyperx = require('hyperx')
 var element = require('vdux/element').default
 const hx = hyperx(element)
 
-
-
 /**
  * Tests
  */
