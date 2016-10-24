@@ -7,6 +7,7 @@ require('babel-register')
 const test = require('tape')
 const markedx = require('..')
 const hyperx = require('hyperx')
+var marked = require('marked')
 var element = require('vdux/element').default
 const hx = hyperx(element)
 
@@ -29,7 +30,7 @@ I am the foo man.
   t.end()
 })
 
-test('should work with inline component', (t) => {
+test.only('should work with inline component', (t) => {
   markedx.component('header', function ({props, children}) {
     return hx`<div>i</div>`
   })
@@ -40,6 +41,27 @@ test('should work with inline component', (t) => {
     ), `<div><div>i</div><h3 id="hello">hello</h3></div>`)
   t.end()
 })
+
+test('should work for multiline markdown', (t) => {
+  t.equal(markedx(
+    '```\n stuff\n more stuff```'
+  ), '<div><pre><code>stuff\nmore stuff\n</code></pre></div>')
+  t.equal(markedx(
+    '1. stuff\n2. more stuff'
+  ), '<div><ol><li>stuff</li><li>more stuff</li></ol></div>')
+  t.end()
+})
+
+test('should work for code boxes', (t) => {
+  markedx.component('codebox', function ({props, children}) {
+    console.log('children', children)
+    return hx`<div innerHTML=${marked('```js\n' + children[0].props.nodeValue + '```')}></div>`
+  })
+  console.log(markedx('<codebox>{`function () {\n\tvar a = 5\n}`}</codebox>'))
+  t.end()
+})
+
+// console.log(markedx('```\n stuff \n```'))
 
 function icon () {
   console.log('iconining')
