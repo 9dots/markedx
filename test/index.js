@@ -30,7 +30,7 @@ I am the foo man.
   t.end()
 })
 
-test.only('should work with inline component', (t) => {
+test('should work with inline component', (t) => {
   markedx.component('header', function ({props, children}) {
     return hx`<div>i</div>`
   })
@@ -54,7 +54,6 @@ test('should work for multiline markdown', (t) => {
 
 test('should work for code boxes', (t) => {
   markedx.component('codebox', function ({props, children}) {
-    console.log('children', children)
     return hx`<div innerHTML=${marked('```js\n' + children[0].props.nodeValue + '```')}></div>`
   })
   console.log(markedx('<codebox>{`function () {\n\tvar a = 5\n}`}</codebox>'))
