@@ -21,7 +21,8 @@
     "escape-html": "^1.0.3",
     "hyperx": "^2.0.5",
     "marked": "^0.3.6",
-    "vdux": "^2.4.10"
+    "vdux": "^2.4.10",
+    "vdux-ui": "^1.2.36"
   },
   "devDependencies": {
     "tape": "^4.2.2"

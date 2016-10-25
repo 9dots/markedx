@@ -21,7 +21,7 @@ init:
 	@git init
 	@git add .
 	@git commit -am "FIRST"
-	@hub create 9dots/markedx -d "Marke down with components."
+	@hub create 9dots/markedx -d "Mark down with components."
 	@travis enable
 	@git push -u origin master
 

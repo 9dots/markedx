@@ -62,6 +62,11 @@ test('should work for code boxes', (t) => {
 
 // console.log(markedx('```\n stuff \n```'))
 
+test.only('should work for checkboxes', (t) => {
+  // console.log(markedx(testPage))
+  t.end()
+})
+
 function icon () {
   console.log('iconining')
 }
