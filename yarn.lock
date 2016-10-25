@@ -958,7 +958,7 @@ babel-plugin-transform-exponentiation-operator@^6.3.13:
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
     babel-runtime "^6.0.0"
 
-babel-plugin-transform-mdx@^0.1.2:
+babel-plugin-transform-mdx:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-mdx/-/babel-plugin-transform-mdx-0.1.4.tgz#3cd48822c0ff543168fd2ec96d10ef1c8a20c23c"
   dependencies:
