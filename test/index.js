@@ -37,14 +37,14 @@ test('should work with inline component', (t) => {
   t.equal(
     markedx(
       `<header>Hello</header>
-        ### hello`
+### hello`
     ), `<div><div>i</div><h3 id="hello">hello</h3></div>`)
   t.end()
 })
 
 test('should work for multiline markdown', (t) => {
   t.equal(markedx(
-    '```\n stuff\n more stuff```'
+    '```\nstuff\nmore stuff```'
   ), '<div><pre><code>stuff\nmore stuff\n</code></pre></div>')
   t.equal(markedx(
     '1. stuff\n2. more stuff'
@@ -63,7 +63,7 @@ test('should work for code boxes', (t) => {
 // console.log(markedx('```\n stuff \n```'))
 
 test.only('should work for checkboxes', (t) => {
-  // console.log(markedx(testPage))
+  console.log(markedx(`1. stuff\n2. more stuff\n\t1. sub more stuff\n\nSeparate thing`))
   t.end()
 })
 

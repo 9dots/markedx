@@ -17,6 +17,7 @@
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-stage-2": "^6.17.0",
+    "babel-types-mdx": "0.1.4",
     "cheerio": "^0.22.0",
     "escape-html": "^1.0.3",
     "hyperx": "^2.0.5",

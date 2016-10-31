@@ -1099,6 +1099,15 @@ babel-types-mdx@^0.1.1:
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
+babel-types-mdx@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/babel-types-mdx/-/babel-types-mdx-0.1.4.tgz#a668832caeb2ff637df71449f9febd981b73113a"
+  dependencies:
+    babel-runtime "^6.9.1"
+    esutils "^2.0.2"
+    lodash "^4.2.0"
+    to-fast-properties "^1.0.1"
+
 babel-types@^6.13.0, babel-types@^6.16.0, babel-types@^6.18.0, babel-types@^6.8.0, babel-types@^6.9.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.18.0.tgz#1f7d5a73474c59eb9151b2417bbff4e4fce7c3f8"
