@@ -62,8 +62,13 @@ test('should work for code boxes', (t) => {
 
 // console.log(markedx('```\n stuff \n```'))
 
-test.only('should work for checkboxes', (t) => {
+test('should work for checkboxes', (t) => {
   console.log(markedx(`1. stuff\n2. more stuff\n\t1. sub more stuff\n\nSeparate thing`))
+  t.end()
+})
+
+test('should add props to marked', (t) => {
+  console.log(markedx(`<Marked style={{flex: true}}>on</Marked>`))
   t.end()
 })
 
