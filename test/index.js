@@ -8,6 +8,7 @@ const test = require('tape')
 const markedx = require('..')
 const hyperx = require('hyperx')
 var marked = require('marked')
+var sample = require('./sample')
 var element = require('vdux/element').default
 const hx = hyperx(element)
 
@@ -76,6 +77,11 @@ test('it should work for indented checkboxes', (t) => {
 
 test('should add props to marked', (t) => {
   console.log(markedx(`<Marked style={{flex: true}}>on</Marked>`))
+  t.end()
+})
+
+test('should gather links', (t) => {
+  console.log(markedx(sample))
   t.end()
 })
 
