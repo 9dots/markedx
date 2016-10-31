@@ -62,8 +62,15 @@ test('should work for code boxes', (t) => {
 
 // console.log(markedx('```\n stuff \n```'))
 
-test('should work for checkboxes', (t) => {
-  console.log(markedx(`1. stuff\n2. more stuff\n\t1. sub more stuff\n\nSeparate thing`))
+test('it should work for indented checkboxes', (t) => {
+  console.log(markedx(`
+###### teacher materials
+- [ ] one
+- [ ] two
+
+###### separate materials
+- [ ] one 
+- [ ] two`))
   t.end()
 })
 

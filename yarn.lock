@@ -958,16 +958,16 @@ babel-plugin-transform-exponentiation-operator@^6.3.13:
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
     babel-runtime "^6.0.0"
 
-babel-plugin-transform-mdx:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-mdx/-/babel-plugin-transform-mdx-0.1.4.tgz#3cd48822c0ff543168fd2ec96d10ef1c8a20c23c"
+babel-plugin-transform-mdx@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-mdx/-/babel-plugin-transform-mdx-0.1.5.tgz#50fe24a3ba18abf39bc3f55be5ece176ab1b14cc"
   dependencies:
     babel-helper-builder-react-jsx "^6.8.0"
     babel-plugin-syntax-jsx "^6.8.0"
     babel-preset-es2015 "^6.16.0"
     babel-preset-stage-2 "^6.17.0"
     babel-runtime "^6.0.0"
-    babel-types-mdx "^0.1.1"
+    babel-types-mdx "^0.1.4"
 
 babel-plugin-transform-object-rest-spread@^6.16.0:
   version "6.16.0"
@@ -1090,16 +1090,7 @@ babel-traverse@^6.16.0, babel-traverse@^6.18.0:
     invariant "^2.2.0"
     lodash "^4.2.0"
 
-babel-types-mdx@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/babel-types-mdx/-/babel-types-mdx-0.1.3.tgz#509d787fa9d903bb4893e8dceb94bdf9d1b66710"
-  dependencies:
-    babel-runtime "^6.9.1"
-    esutils "^2.0.2"
-    lodash "^4.2.0"
-    to-fast-properties "^1.0.1"
-
-babel-types-mdx@0.1.4:
+babel-types-mdx@^0.1.4, babel-types-mdx@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/babel-types-mdx/-/babel-types-mdx-0.1.4.tgz#a668832caeb2ff637df71449f9febd981b73113a"
   dependencies:
