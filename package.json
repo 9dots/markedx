@@ -2,7 +2,7 @@
   "name": "markedx",
   "description": "Marke down with components.",
   "repository": "git://github.com/9dots/markedx.git",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
