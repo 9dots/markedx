@@ -63,15 +63,19 @@ test('should work for code boxes', (t) => {
 
 // console.log(markedx('```\n stuff \n```'))
 
-test('it should work for indented checkboxes', (t) => {
+test.only('it should work for indented checkboxes', (t) => {
   console.log(markedx(`
 ###### teacher materials
-- [ ] one
+- [ ] one aasdf asdfasdf asfd asdfasf asfdasfdsadfasdf asdfasfds adfasdf asfasfdas fasdfs fasdfsdf asdfsfd  sdfasdf asfd asfsa fasfd s
 - [ ] two
 
 ###### separate materials
 - [ ] one 
-- [ ] two`))
+- [ ] two
+
+###### normal list
+- one
+- two`))
   t.end()
 })
 
